@@ -80,5 +80,14 @@ function isDraw() {
 }
 
 function clearGrid() {
+    resetInput()
+    document.getElementById("myModal").style.display = "flex";
     startGame();
+}
+
+function resetInput(){
+    let reset1 = document.getElementById("player1")
+    let reset2 = document.getElementById("player2")
+    reset1.value = ""
+    reset2.value = ""
 }
